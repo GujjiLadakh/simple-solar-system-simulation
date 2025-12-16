@@ -4,18 +4,7 @@
 from typing import Union
 import matplotlib.pyplot as plt
 from matplotlib import animation
-
-# Constants
-G: float           = 6.67e-11              # Constant of Gravitation
-M_s: float         = 2.0e30                # Mass of Sun
-M_e: float         = 5.972e24              # Mass of Earth
-AU: float          = 1.5e11                # Astronomical Unit in metres
-
-day_seconds: float = 24.0 * 60 * 60        # Number of seconds in a day
-t: float           = 0.0                   # Counter
-dt: float          = 1 * day_seconds       # Time step
-
-v_e_apv: int       = 29290                 # Velocity of Earth at aphelion
+from data import *
 
 fig, ax = plt.subplots(figsize=(10, 10))
 ax.set_aspect('equal')
