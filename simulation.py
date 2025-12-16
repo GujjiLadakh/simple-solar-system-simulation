@@ -168,9 +168,6 @@ sun.create_point()
 def update_all(i):
     r = []
     for planet in planets:
-        planet.x_data.append(planet.x_list[i])
-        planet.y_data.append(planet.y_list[i])
-        planet.z_data.append(planet.z_list[i])
 
         line, point, text = planet.update_line_and_point(i)
         r.extend([line, point, text])
